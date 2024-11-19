@@ -1,0 +1,71 @@
+/* External CSS */
+body {
+    font-family: Georgia, Verdana, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #13afd6;
+    line-height: 1.5;
+}
+.header {
+    color: #4698ea;
+}
+header {
+    background-color: #9621da79;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+}
+
+.grid div {
+    flex: 1;
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #9621da9c;
+    color: white;
+}
+
+/* Animation */
+h1 {
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
