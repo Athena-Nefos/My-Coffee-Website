@@ -1,11 +1,15 @@
 /* External CSS */
 body {
     font-family: Georgia, Verdana, sans-serif;
+    height: 100%;
     margin: 20px;
     padding: 0;
     background-color: #f4f4f9;
     color: #13afd6;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .header {
     color: #4698ea;
@@ -34,7 +38,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-
+/* grid item on Home Page */
 .grid {
     display: flex;
     gap: 1em;
@@ -49,15 +53,43 @@ nav ul li a {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Table Heading on About Page */
+th{
+    text-decoration: underline;
+}
+/* Adjustsment on Contact Page */
+.coffeeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+}
+.coffee{
+    width: 550px;
+    height: auto;
+    mask-image: linear-gradient(to rught, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+}
+.class, form, label, input{
+    margin-bottom: 20px
+}
+.class, input{
+    margin-left: 10px;
+}
+.submit:hover{
+    cursor: pointer;
+}
 footer {
     text-align: center;
     padding: 1em 0;
     background-color: #9621da9c;
     color: white;
+    margin-top: auto;
 }
 
 /* Animation */
-h1 {
+h1, .coffee {
     animation: fade-in 2s ease-in-out;
 }
 
